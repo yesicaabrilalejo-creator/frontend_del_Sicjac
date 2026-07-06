@@ -1,0 +1,166 @@
+.facturacion{
+    width:90%;
+    margin:40px auto;
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.titulo{
+    text-align:center;
+    color:#b71c1c;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.barra{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    gap:15px;
+}
+
+.buscar{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.nuevo{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.nuevo:hover{
+    background:#1b5e20;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#b71c1c;
+    color:white;
+}
+
+th{
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+tr:hover{
+    background:#eeeeee;
+}
+
+.editar{
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+.eliminar{
+    background:#d32f2f;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.editar:hover{
+    background:#0d47a1;
+}
+
+.eliminar:hover{
+    background:#b71c1c;
+}
+
+/* ===== Modal ===== */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    width:450px;
+    border-radius:15px;
+    padding:30px;
+}
+
+.modal-content h2{
+    text-align:center;
+    color:#b71c1c;
+    margin-bottom:20px;
+}
+
+.modal-content input{
+    width:100%;
+    margin-bottom:15px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    box-sizing:border-box;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.guardar{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.cancelar{
+    background:#d32f2f;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.guardar:hover{
+    background:#1b5e20;
+}
+
+.cancelar:hover{
+    background:#b71c1c;
+}
