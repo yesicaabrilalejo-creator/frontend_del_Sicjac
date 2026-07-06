@@ -4,7 +4,6 @@ import { obtenerClientes, guardarCliente } from "../services/clienteService";
 function Clientes() {
     const [clientes, setClientes] = useState([]);
 
-    // Estados para manejar el formulario
     const [mostrarFormulario, setMostrarFormulario] = useState(false);
     const [formData, setFormData] = useState({
         nombre: "",
@@ -13,7 +12,6 @@ function Clientes() {
         telefono: ""
     });
 
-    // Envolvemos la función en useCallback para evitar problemas de dependencias en useEffect
     const cargarClientes = useCallback(async () => {
         try {
             const response = await obtenerClientes();
@@ -24,8 +22,7 @@ function Clientes() {
     }, []);
 
     useEffect(() => {
-        // Envolvemos la llamada en una función asíncrona interna para evitar el warning
-        // "Promise returned is ignored" de ESLint.
+
         const fetchInicial = async () => {
             await cargarClientes();
         };
@@ -33,13 +30,11 @@ function Clientes() {
         fetchInicial();
     }, [cargarClientes]);
 
-    // Manejador para los cambios en los inputs
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    // Manejador para enviar el formulario
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
