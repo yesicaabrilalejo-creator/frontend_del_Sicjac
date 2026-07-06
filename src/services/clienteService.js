@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/clientes";
+const API_URL = "https://sicjac-backend-1.onrender.com/clientes";
 
 export const obtenerClientes = () => axios.get(API_URL);
 
